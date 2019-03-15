@@ -1,0 +1,2 @@
+Add installation of screenfetch +applications @1.0.0
+Add installation of fortune_lite +applications @1.0.0

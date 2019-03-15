@@ -1,0 +1,13 @@
+/usr/share/vim/vim81/defaults.vim
+/usr/share/vim/vim81/syntax/syntax.vim
+/usr/share/vim/vim81/syntax/synload.vim
+/usr/share/vim/vim81/syntax/syncolor.vim
+/usr/share/vim/vim81/filetype.vim
+/usr/share/vim/vimfiles/fdetect/PKGBUILD.vim
+/usr/share/vim/vimfiles/fdetect/augeas.vim
+/usr/share/vim/vimfiles/fdetect/conkyrc.vim
+/usr/share/vim/vimfiles/fdetect/dockerfile.vim
+/usr/share/vim/vimfiles/fdetect/pullrequest.vim
+/usr/share/vim/vimfiles/fdetect/vagrantfile.vim
+/usr/share/vim/vim81/ftplugin.vim
+/usr/share/vim/vim81/indent.vim

@@ -1,0 +1,30 @@
+# Personal .bash_methods file
+
+# Define an SSH wrapper to allow for simplified Agent Forwarding
+if [ -n "$(type ssh 2> /dev/null)" ]; then
+	function assh {
+		ssh-agent bash -c "ssh-add && ssh -A $@"
+	}
+fi
+
+# Define a shortcut to run a command in a particular directory without having to run 2 "cd" commands around it:
+function dexec {
+	pushd . > /dev/null
+	cd $1
+	${@: 2}
+	popd > /dev/null
+}
+
+# Define a method to apply a red-tint to data passed through "stderr":
+if [ "$color_available" = yes ]; then
+	function errcolor {
+		(set -o pipefail && "$@" 2>&1>&3 | sed $'s,.*,\e[31m&\e[m,' >&2) 3>&1
+	}
+fi
+
+# Define a method to search all text files in a given directory for a key word or phrase":
+function search {
+	find . -exec cat {} \; 2>/dev/null | grep "$@"
+}
+
+#  vim: set ts=4 sw=4 tw=0 noet :

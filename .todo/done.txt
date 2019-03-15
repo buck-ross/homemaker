@@ -1,0 +1,2 @@
+
+x 2019-03-13 Redo "todo" configuration to pull files from root instead of this directory +applications @1.0.0
